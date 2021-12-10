@@ -11,17 +11,17 @@ const pageService = (inputDate, mediaSection, errorAPI) => {
     url: `https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=${date}`,
     /* create the media section upon successful request */
     success: function (response) {
-      //console.log(response);
+      console.log(response);
       if (response.media_type == "image") {
         if (!errorAPI.hasClass("invisible")) {
           errorAPI.addClass("invisible");
         }
-        media.createImage(response.title, response.url);
+        media.createImage(response.title, response.url, response.explanation);
       } else {
         if (!errorAPI.hasClass("invisible")) {
           errorAPI.addClass("invisible");
         }
-        media.createVideo(response.title, response.url);
+        media.createVideo(response.title, response.url, response.explanation);
       }
     },
     /* request error handling - message to the user */

@@ -9,26 +9,47 @@ export default class MediaSection {
   }
 
   /* method: create the image section */
-  createImage(responseImgTitle, imageUrl) {
+  createImage(responseImgTitle, imageUrl, imgExplanation) {
     this.mediaSection.removeClass("invisible");
     const imageTitle = $(`<h1>${responseImgTitle}</h1>`);
+    const imageDescription = $(`<p>${imgExplanation}</p>`);
+    imageDescription.css({
+      fontSize: "15px",
+      maxWidth: "100%",
+      maxHeight: "30%",
+      alignSelf: "flex-start",
+      justifySelf: "flex-start",
+      letterSpacing: 0,
+      marginTop: "5%",
+    });
     const picture = $(`<img src="${imageUrl}">`);
     picture.css({
-      maxWidth: "80%",
-      maxHeight: "80%",
+      maxWidth: "60%",
+      maxHeight: "60%",
       borderRadius: "10px",
       boxShadow: "10px 10px 2px #000",
     });
     this.mediaSection.append(imageTitle);
     this.mediaSection.append(picture);
+    this.mediaSection.append(imageDescription);
   }
 
   /* method: create the video section */
-  createVideo(responseVideoTitle, videoUrl) {
+  createVideo(responseVideoTitle, videoUrl, videoExplanation) {
     this.mediaSection.removeClass("invisible");
     const videoTitle = $(`<h1>${responseVideoTitle}</h1>`);
+    const videoDescription = $(`<p>${videoExplanation}</p>`);
+    videoDescription.css({
+      fontSize: "15px",
+      maxWidth: "100%",
+      maxHeight: "30%",
+      alignSelf: "flex-start",
+      justifySelf: "flex-start",
+      letterSpacing: 0,
+      marginTop: "5%",
+    });
     const video = $(
-      `<iframe src="${videoUrl} width="90%" height="80%" frameborder="0" allowfullscreen></iframe>`
+      `<iframe src="${videoUrl} width="60%" height="60%" frameborder="0" allowfullscreen></iframe>`
     );
     video.css({
       border: "none",
@@ -37,5 +58,6 @@ export default class MediaSection {
     });
     this.mediaSection.append(videoTitle);
     this.mediaSection.append(video);
+    this.mediaSection.append(videoDescription);
   }
 }
