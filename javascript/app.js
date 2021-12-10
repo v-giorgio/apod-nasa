@@ -1,4 +1,4 @@
-import pageService from "./PageService.js";
+import pageService from "./pageService.js";
 
 const inputDate = $("#selected-date");
 const submitBtn = $(".submit-button");
