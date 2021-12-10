@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA | Picture of the Day</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="icon" href="./assets/img/galaxy-icon.png">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+</head>
+
+<body>
+    <div class="page">
+        <!-- background video -->
+        <video src="./assets/img/galaxy.mp4" type="video/mp4" autoplay muted loop></video>
+        <header><a href="https://www.nasa.gov/">NASA</a> | Picture of the Day</header>
+        <main>
+            <!-- form section -->
+            <section class="form-section">
+                <h1>Informe uma data</h1>
+                <form>
+                    <label for="selected-date">Data:</label>
+                    <input type="date" name="selected-date" id="selected-date">
+                </form>
+                <p class="error-date invisible">Erro. Informe uma data válida</p>
+                <button class="submit-button">Enviar</button>
+                <p class="error-api invisible">Erro na requisição. Aguarde para tentar novamente em instantes</p>
+            </section>
+            <!-- media section -->
+            <section class="media-section invisible">
+            </section>
+        </main>
+        <footer>
+            Criado por
+            <a href="https://github.com/v-giorgio">
+                Vitor Giorgio
+            </a>
+        </footer>
+    </div>
+</body>
+<script type="module" src="./javascript/app.js"></script>
+
+</html>
