@@ -13,15 +13,6 @@ export default class MediaSection {
     this.mediaSection.removeClass("invisible");
     const imageTitle = $(`<h1>${responseImgTitle}</h1>`);
     const imageDescription = $(`<p>${imgExplanation}</p>`);
-    imageDescription.css({
-      fontSize: "15px",
-      maxWidth: "100%",
-      maxHeight: "30%",
-      alignSelf: "flex-start",
-      justifySelf: "flex-start",
-      letterSpacing: 0,
-      marginTop: "5%",
-    });
     const picture = $(`<img src="${imageUrl}">`);
     picture.css({
       maxWidth: "60%",
@@ -39,15 +30,6 @@ export default class MediaSection {
     this.mediaSection.removeClass("invisible");
     const videoTitle = $(`<h1>${responseVideoTitle}</h1>`);
     const videoDescription = $(`<p>${videoExplanation}</p>`);
-    videoDescription.css({
-      fontSize: "15px",
-      maxWidth: "100%",
-      maxHeight: "30%",
-      alignSelf: "flex-start",
-      justifySelf: "flex-start",
-      letterSpacing: 0,
-      marginTop: "5%",
-    });
     const video = $(
       `<iframe src="${videoUrl} width="60%" height="60%" frameborder="0" allowfullscreen></iframe>`
     );

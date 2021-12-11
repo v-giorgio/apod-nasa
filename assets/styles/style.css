@@ -159,16 +159,36 @@ form input:focus {
 /* MAIN - MEDIA SECTION */
 
 .media-section {
+  overflow: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
 
+.media-section::-webkit-scrollbar {
+  background-color: rgba(141, 139, 139, 0.3);
+  border: none;
+}
+
+.media-section::-webkit-scrollbar-thumb {
+  background-color: rgba(141, 139, 139, 0.3);
+  border-radius: 20px;
+  border: none;
+}
+
 .media-section h1 {
-  margin-top: 0;
+  margin-top: 30%;
   font-weight: 100;
   font-size: 22px;
+}
+
+.media-section p {
+  font-size: 15px;
+  max-width: 100%;
+  letter-spacing: 0;
+  margin-top: 5%;
+  margin-bottom: 2%;
 }
 
 /* JS TOGGLE CLASSES */
