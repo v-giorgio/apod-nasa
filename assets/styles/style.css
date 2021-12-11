@@ -167,28 +167,30 @@ form input:focus {
 }
 
 .media-section::-webkit-scrollbar {
-  background-color: rgba(141, 139, 139, 0.3);
-  border: none;
+  background-color: rgba(141, 139, 139, 0.1);
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .media-section::-webkit-scrollbar-thumb {
   background-color: rgba(141, 139, 139, 0.3);
-  border-radius: 20px;
-  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .media-section h1 {
-  margin-top: 20px;
+  height: 2%;
+  margin-top: 0;
   font-weight: 100;
   font-size: 22px;
 }
 
 .media-section p {
+  height: 15%;
   font-size: 16px;
-  max-width: 100%;
   letter-spacing: 0;
-  margin-top: 5%;
-  margin-bottom: 20px;
+  margin-top: 0.5%;
+  margin-bottom: 10%;
 }
 
 /* JS TOGGLE CLASSES */
@@ -245,7 +247,7 @@ footer a:hover {
   .form-section,
   .media-section {
     width: 80%;
-    margin-bottom: 2%;
+    padding-bottom: 30%;
   }
 
   footer {

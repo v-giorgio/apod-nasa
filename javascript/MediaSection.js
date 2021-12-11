@@ -19,6 +19,7 @@ export default class MediaSection {
       maxHeight: "60%",
       borderRadius: "10px",
       boxShadow: "10px 10px 2px #000",
+      margin: "0",
     });
     this.mediaSection.append(imageTitle);
     this.mediaSection.append(picture);
@@ -37,6 +38,7 @@ export default class MediaSection {
       border: "none",
       borderRadius: "10px",
       boxShadow: "10px 10px 2px #000",
+      margin: "0",
     });
     this.mediaSection.append(videoTitle);
     this.mediaSection.append(video);
